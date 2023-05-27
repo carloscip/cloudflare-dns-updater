@@ -3,9 +3,6 @@
 
 This script is used to update Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP! Written in pure BASH.
 
-## Support Me
-[![Donate Via Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/Jasonkkf)
-
 ## Installation
 
 ```bash
@@ -25,6 +22,7 @@ This script is used with crontab. Specify the frequency of execution through cro
 # │ │ │ │ │ │
 # │ │ │ │ │ │
 # * * * * * /bin/bash {Location of the script}
+*/15 * * * * BASH_ENV=/cloudflare-ddns-updater/.env /cloudflare-ddns-updater/cloudflare-template.sh
 ```
 
 ## Contributing
